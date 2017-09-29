@@ -15,8 +15,8 @@
 				<div id="stats_text"></div>
 			</div>
 
-			i'll move if <span class="highlight">&lt;<span id="bias_text">33%</span></span> 
-			or <span class="highlight">&gt;<span id="nonconform_text">100%</span></span> of my neighbors are like me
+			이웃들 중 나와 비슷한 도형이 <span class="highlight">&lt;<span id="bias_text">33%</span></span>
+			또는 <span class="highlight">&gt;<span id="nonconform_text">100%</span></span> 일 때 자리를 옮기고 싶어
 			<br>
 			<div id="slider"></div>
 			<br>
@@ -46,7 +46,7 @@ var whatever = new DoubleSlider(document.getElementById("slider"),{
 	],
 	values:[0.10,0.80],
 	onChange:function(values){
-		
+
 		window.BIAS = values[0];
 		window.NONCONFORM = values[1];
 
