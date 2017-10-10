@@ -23,7 +23,7 @@
             display: block;
             max-width: 800px;
             box-shadow: 0px 0px 10px black;
-            background-image: linear-gradient(45deg, silver 25%, transparent 25%, transparent 75%, silver 75%, silver), 
+            background-image: linear-gradient(45deg, silver 25%, transparent 25%, transparent 75%, silver 75%, silver),
                 linear-gradient(45deg, silver 25%, transparent 25%, transparent 75%, silver 75%, silver);
             background-size: 20px 20px;
             background-position: 0 0, 10px 10px;
@@ -54,7 +54,7 @@
         img.onmouseleave();
         img.onmousedown = function(evt){
             console.log([evt.pageX - evt.target.offsetLeft, evt.pageY - evt.target.offsetTop]);
-        };        
+        };
         // make download button
         var button = document.createElement("button");
         document.body.appendChild(button);
@@ -108,8 +108,8 @@
                 ctx.fillStyle = gradient;
                 ctx.fillRect(0, -0.1, 1, 1.2);
             ctx.restore();
-            putText(ctx, 160, 195, 128, "white", "Ostrich Sans", "Parable of the Polygons");
-            putText(ctx, 290, 250, 56, "gray", "Ostrich Sans", "A Playable Post on the Shape of Society");
+            putText(ctx, 390, 195, 112, "white", "Ostrich Sans", "도형 이야기");
+            putText(ctx, 300, 250, 49, "gray", "Ostrich Sans", "사회의 형태에 관한 플레이 가능한 글");
         })
     </script>
 
@@ -119,8 +119,8 @@
             ctx.drawImage(img, 0, 0);
             for (var y = 100; y < 200; y += 80)
                 tapeRect(ctx, 220, y, 340, 60);
-            putText(ctx, 246, 156, 50, "#aaa", "Ostrich Sans Black", "Drag & Drop the");
-            putText(ctx, 250, 218, 44, "#aaa", "Ostrich Sans Black", "Unhappy Polygons");
+            putText(ctx, 250, 156, 44, "#aaa", "Ostrich Sans Black", "불행한 도형들을");
+            putText(ctx, 250, 218, 44, "#aaa", "Ostrich Sans Black", "끌어서 놓으세요");
         })
     </script>
 
@@ -130,12 +130,12 @@
             ctx.drawImage(img, 0, 0);
             for (var y = 6; y < 408; y += 52)
                 tapeRect(ctx, 56, y, 133, 34);
-            for (var y = 38; y < 200; y += 52)
-                putText(ctx, 58, y, 42, "#fff", "Ostrich Sans Light", "New Board");
-            for (var y = 245; y < 300; y += 52)
-                putText(ctx, 58, y, 36, "#fff", "Ostrich Sans Light", "Start Movin'");
-            for (var y = 350; y < 450; y += 52)
-                putText(ctx, 58, y, 41, "#fff", "Ostrich Sans Light", "Stop Movin'");
+            for (var y = 35; y < 200; y += 52)
+                putText(ctx, 58, y, 28, "#fff", "Ostrich Sans Light", "새로운 판");
+            for (var y = 242; y < 300; y += 52)
+                putText(ctx, 58, y, 28, "#fff", "Ostrich Sans Light", "움직임 시작");
+            for (var y = 347; y < 450; y += 52)
+                putText(ctx, 58, y, 28, "#fff", "Ostrich Sans Light", "움직임 정지");
         })
     </script>
 
@@ -145,9 +145,9 @@
             ctx.drawImage(img, 0, 0);
             tapeRect(ctx, 5, 164, 20, 105);
             tapeRect(ctx, 30, 275, 40, 18);
-            putText(ctx, 35, 293, 20, "#666", "Ostrich Sans Black", "Time");
+            putText(ctx, 35, 293, 20, "#666", "Ostrich Sans Black", "시간");
             ctx.rotate(Math.PI/-2);
-            putText(ctx, -260, 22, 20, "#666", "Ostrich Sans Black", "Segregation");
+            putText(ctx, -260, 22, 20, "#666", "Ostrich Sans Black", "분리된 정도");
         })
     </script>
 </body>
